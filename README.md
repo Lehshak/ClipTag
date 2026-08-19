@@ -46,8 +46,7 @@ observable object holding state, Views has the three tabs.
 
 ## Numbers
 
-On an iPhone 15 pro max, a 30 second clip takes 3.9 seconds, roughly [Y]ms per frame.
-Setting concurrency to 1 puts it at [Z]ms per frame.
+On an iPhone 15 pro max, a 30 second clip takes roughly 3.9 seconds to load through the models.
 
 <img width="427" height="939" alt="Screenshot 2026-08-19 at 2 18 23 PM" src="https://github.com/user-attachments/assets/c039ad64-0e9c-4fb3-ba51-accb5a62e3b3" />
 
