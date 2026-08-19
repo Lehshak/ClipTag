@@ -56,7 +56,7 @@ Core ML fails to start on some simulator runtimes, which takes the classifier do
 The app notices and falls back to comparing colour histograms so scene detection still works,
 but you won't get any tags. Use a real device.
 
-The scene cut threshold is tuned by eye on my own clips, so it may need adjusting for
+The scene cut threshold is tuned by eye for my clips, so it may need adjusting for
 different footage. That's why it's a slider.
 
 Requires iOS 26.1.
