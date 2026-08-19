@@ -1,24 +1,25 @@
 //
 //  ContentView.swift
-//  ClipTag2
+//  ClipTag
 //
-//  Created by Lehshak Tee on 2026-08-19.
+//  Created by Lehshak Teelockchand on 2026-08-17.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @State private var model = AnalysisViewModel()
 
-#Preview {
-    ContentView()
+    var body: some View {
+        TabView {
+            AnalyzeView(model: model)
+                .tabItem { Label("Analyze", systemImage: "wand.and.stars") }
+
+            FramesView(model: model)
+                .tabItem { Label("Frames", systemImage: "square.grid.2x2") }
+
+            TuningView(model: model)
+                .tabItem { Label("Tuning", systemImage: "slider.horizontal.3") }
+        }
+    }
 }

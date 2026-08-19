@@ -35,16 +35,6 @@
 			path = ClipTag2;
 			sourceTree = "<group>";
 		};
-		7055D00C303612E900CD8DAD /* ClipTag2Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ClipTag2Tests;
-			sourceTree = "<group>";
-		};
-		7055D016303612E900CD8DAD /* ClipTag2UITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ClipTag2UITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				7055CFFE303612E800CD8DAD /* ClipTag2 */,
-				7055D00C303612E900CD8DAD /* ClipTag2Tests */,
-				7055D016303612E900CD8DAD /* ClipTag2UITests */,
 				7055CFFD303612E800CD8DAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				7055D00B303612E900CD8DAD /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				7055D00C303612E900CD8DAD /* ClipTag2Tests */,
-			);
 			name = ClipTag2Tests;
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				7055D015303612E900CD8DAD /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				7055D016303612E900CD8DAD /* ClipTag2UITests */,
 			);
 			name = ClipTag2UITests;
 			packageProductDependencies = (
