@@ -6,6 +6,9 @@ a decent thumbnail. Everything runs on the phone and nothing gets uploaded.
 
 [Demo](Cliptag.mov)
 
+<img width="431" height="940" alt="Screenshot 2026-08-19 at 2 18 10 PM" src="https://github.com/user-attachments/assets/f0eef7e9-b51e-4214-afcb-6177360930d4" />
+
+
 ## What it does
 
 - Samples about one frame per second out of the clip
@@ -13,6 +16,9 @@ a decent thumbnail. Everything runs on the phone and nothing gets uploaded.
 - Finds scene cuts by comparing consecutive frames
 - Scores every frame for blur and picks a thumbnail
 - Reports how long all of that took
+
+<img width="431" height="941" alt="Screenshot 2026-08-19 at 2 17 41 PM" src="https://github.com/user-attachments/assets/9bc40c9a-614a-4888-b28c-fbc755771f0a" />
+
 
 There's a Tuning tab for changing the sampling rate, cut sensitivity, how many frames get
 processed at once, and the thumbnail scoring weights. Changing anything lets you re-run
@@ -32,6 +38,9 @@ from being picked as the thumbnail.
 Frames are processed a few at a time in a task group instead of one after another. You can
 set that to 1 in the Tuning tab to see what the difference actually is.
 
+<img width="432" height="939" alt="Screenshot 2026-08-19 at 2 18 53 PM" src="https://github.com/user-attachments/assets/105a4601-f86c-4c77-aab5-ca300478caa8" />
+
+
 Layout is simple. Services has the pipeline, ViewModels has the single
 observable object holding state, Views has the three tabs.
 
@@ -39,6 +48,8 @@ observable object holding state, Views has the three tabs.
 
 On an iPhone [MODEL], a [N] second clip takes about [X] seconds, roughly [Y]ms per frame.
 Setting concurrency to 1 puts it at [Z]ms per frame.
+
+<img width="427" height="939" alt="Screenshot 2026-08-19 at 2 18 23 PM" src="https://github.com/user-attachments/assets/c039ad64-0e9c-4fb3-ba51-accb5a62e3b3" />
 
 ## Notes
 
