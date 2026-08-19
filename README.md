@@ -2,7 +2,7 @@
 
 An iOS app that looks at a short video and works out what's in it. Pick a clip and it pulls
 out keyframes, tags them, finds where the scenes change, and suggests a frame that would make
-a decent thumbnail. Everything runs on the phone and nothing gets uploaded.
+a "good" thumbnail. Everything runs on the phone and nothing gets uploaded.
 
 [Demo](Cliptag.mov)
 
@@ -26,14 +26,13 @@ against the clip you already imported instead of picking it again.
 
 ## How it works
 
-No model files ship with the app. Vision already has an image classifier
+No model files are included. Apple's Vision already has an image classifier
 VNClassifyImageRequest and an image embedding VNGenerateImageFeaturePrintRequest
 built into iOS, so I used those.
 
 Scene detection is just the distance between the embeddings of two consecutive frames. If it
-jumps past a threshold, that's a cut. Blur detection is variance of the Laplacian on a small
-grayscale copy of each frame, which is cheap and good enough to keep motion-blurred frames
-from being picked as the thumbnail.
+jumps past a threshold, it cuts. Blur detection is variance of the Laplacian on a small
+grayscale copy of each frame, which is easy to calculate and good enough to keep blurry frames from being chosen as a thumbnail.
 
 Frames are processed a few at a time in a task group instead of one after another. You can
 set that to 1 in the Tuning tab to see what the difference actually is.
@@ -65,4 +64,5 @@ Requires iOS 26.1.
 
 - Move frame preprocessing into a Metal shader and see if it's actually faster
 - Export the tags and the chosen thumbnail
+- Test out custom models??? :D
 
