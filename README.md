@@ -2,7 +2,9 @@
 
 An iOS app that looks at a short video and works out what's in it. Pick a clip and it pulls
 out keyframes, tags them, finds where the scenes change, and suggests a frame that would make
-a "good" thumbnail. Everything runs on the phone and nothing gets uploaded.
+a "good" thumbnail. Good meaning a combination of 3 criteria, face presence, sharpness, and subject confidence (high percentage of one tag being seen on frame).
+
+Everything runs on the phone and nothing gets uploaded.
 
 [Demo](Cliptag.mov)
 
