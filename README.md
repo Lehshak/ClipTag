@@ -4,6 +4,7 @@ An iOS app that looks at a short video and works out what's in it. Pick a clip a
 out keyframes, tags them, finds where the scenes change, and suggests a frame that would make
 a decent thumbnail. Everything runs on the phone and nothing gets uploaded.
 
+[Demo](Cliptag.mov)
 
 ## What it does
 
